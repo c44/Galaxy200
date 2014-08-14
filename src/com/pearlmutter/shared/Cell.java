@@ -21,11 +21,11 @@ public class Cell implements Serializable {
 	}
 
 	public ArrayList<User> getUsers() {
-		return users; //TODO work on this
+		return users;
 	}
 
 	public void setUsers(ArrayList<User> users) {
-		this.users = users; //TODO work on this
+		this.users = users;
 	}
 
 	public Double getReadyness() {

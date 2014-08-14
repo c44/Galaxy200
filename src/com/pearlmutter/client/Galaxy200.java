@@ -4,12 +4,7 @@ import java.util.ArrayList;
 
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.user.client.Window;
-import com.google.gwt.user.client.rpc.AsyncCallback;
-import com.google.gwt.user.client.ui.FlexTable;
-import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.RootPanel;
-import com.google.gwt.user.client.ui.SplitLayoutPanel;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.pearlmutter.shared.Cell;
 import com.pearlmutter.shared.User;
@@ -28,7 +23,6 @@ public class Galaxy200 implements EntryPoint {
 	public ArrayList<Cell> cells;
 	public Galaxy200 app = this;
 
-	private Label testLabel = new Label();
 
 	/**
 	 * This is the entry point method.
@@ -45,6 +39,10 @@ public class Galaxy200 implements EntryPoint {
 
 	public UI getUi() {
 		return ui;
+	}
+
+	public DataLoader getDl() {
+		return dl;
 	}
 
 }

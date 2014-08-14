@@ -2,7 +2,6 @@ package com.pearlmutter.client;
 
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Composite;
-import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.SplitLayoutPanel;
 import com.google.gwt.user.client.ui.VerticalPanel;
 
@@ -10,8 +9,8 @@ public class UI extends Composite {
 
 	private Galaxy200 app;
 
-	private final int BORDER_WIDTH = 7;
-	private final String WIDTH = String.valueOf(Window.getClientWidth() - (2 * BORDER_WIDTH));
+//	private final int BORDER_WIDTH = 7;
+//	private final String WIDTH = String.valueOf(Window.getClientWidth() - (2 * BORDER_WIDTH));
 	private VerticalPanel main = new VerticalPanel();
 	private SplitLayoutPanel layoutPanel = new SplitLayoutPanel(7);
 	SideBar sidebar;

@@ -2,8 +2,6 @@ package com.pearlmutter.client;
 
 import java.util.ArrayList;
 
-import org.w3c.dom.Document;
-
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.pearlmutter.shared.Cell;
 import com.pearlmutter.shared.User;

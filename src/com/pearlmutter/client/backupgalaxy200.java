@@ -3,9 +3,9 @@ package com.pearlmutter.client;
 import java.util.ArrayList;
 
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Label;
-import com.google.gwt.user.client.ui.RootPanel;
 import com.pearlmutter.shared.Cell;
 import com.pearlmutter.shared.User;
 
@@ -67,7 +67,7 @@ public class backupgalaxy200 {
 //
 //			@Override
 //			public void onFailure(Throwable caught) {
-//				Window.alert("You FAILED at Life");
+//				Window.alert("You FAILED at Life (users)");
 //			}
 //		});
 //
@@ -84,7 +84,7 @@ public class backupgalaxy200 {
 //
 //			@Override
 //			public void onFailure(Throwable caught) {
-//				// TODO Auto-generated method stub
+//				Window.alert("You FAILED at Life (cells)");
 //
 //			}
 //		});

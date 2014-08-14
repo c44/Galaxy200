@@ -5,8 +5,6 @@ import java.util.ArrayList;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
-import com.google.gwt.user.client.ui.FlexTable;
-import com.google.gwt.user.client.ui.RootPanel;
 import com.pearlmutter.shared.Cell;
 import com.pearlmutter.shared.User;
 
@@ -43,7 +41,7 @@ public class DataLoader {
 
 			@Override
 			public void onFailure(Throwable caught) {
-				Window.alert("You FAILED at Life");
+				Window.alert("You FAILED at Life (users)");
 			}
 		});
 	}
@@ -63,8 +61,7 @@ public class DataLoader {
 
 			@Override
 			public void onFailure(Throwable caught) {
-				// TODO Auto-generated method stub
-
+				Window.alert("You FAILED at Life (cells)");
 			}
 		});
 	}

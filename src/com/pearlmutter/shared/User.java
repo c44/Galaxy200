@@ -74,11 +74,11 @@ public class User implements Serializable {
 	}
 
 	public ArrayList<WorkDay> getWorkDays() {
-		return workDays; // TODO work on this
+		return workDays;
 	}
 
 	public void setWorkDays(ArrayList<WorkDay> workDays) {
-		this.workDays = workDays; // TODO work on this
+		this.workDays = workDays;
 	}
 
 	public void addWorkDay(Date date, WorkDayType type, boolean approval) {

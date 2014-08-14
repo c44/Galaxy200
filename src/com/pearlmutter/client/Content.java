@@ -1,6 +1,5 @@
 package com.pearlmutter.client;
 
-import java.util.ArrayList;
 import java.util.Date;
 
 import com.google.gwt.core.client.GWT;
@@ -22,7 +21,6 @@ import com.google.gwt.user.client.ui.SuggestBox;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.VerticalPanel;
 import com.google.gwt.user.datepicker.client.DateBox;
-import com.pearlmutter.shared.Cell;
 import com.pearlmutter.shared.User;
 
 public class Content extends Composite {

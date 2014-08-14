@@ -21,4 +21,8 @@ public class Item extends TreeItem {
 	public void setAsItem() {
 		type = true;
 	}
+
+	public boolean getType() {
+		return type;
+	}
 }
