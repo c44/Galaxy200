@@ -1,0 +1,2 @@
+serviceClass: com.pearlmutter.client.DBService
+path: 0484FC8764A3D822525A9B2892963BB2.gwt.rpc

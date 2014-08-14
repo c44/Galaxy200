@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<opml version="2.0">
+  <head>
+    <ownerEmail>yo.pearlmutter@gmail.com</ownerEmail>
+  </head>
+  <body>
+    <outline text="Personal" >
+      <outline text="brainstorming" >
+        <outline text="if crashes users menu &amp;gt; content(final Galaxy200 app)" /></outline>
+      <outline text="TODO" >
+        <outline text="Fix drivers liscense" /></outline>
+      <outline text="Buy" >
+        <outline text="Groceries" >
+          <outline text="Pecans" /></outline>
+        <outline text="CVS" />
+        <outline text="BestBuy" />
+        <outline text="Home Depot" >
+          <outline text="30' / 80' door" /></outline>
+      </outline>
+      <outline text="Plans" >
+        <outline text="Rock and Roll Hall of Fame" />
+        <outline text="Ice Skating" />
+        <outline text="Movies" /></outline>
+      <outline text="calls" /></outline>
+    <outline text="Work" >
+      <outline text="Tools" >
+        <outline text="Crouton" >
+          <outline text="Setup" >
+            <outline text="esc + refresh + brief power &amp;gt; recovery mode" />
+            <outline text="ctrl-d" />
+            <outline text="ctrl-alt-t &amp;gt; crosh &amp;gt; shell" />
+            <outline text="SSD" >
+              <outline text="sudo sh -e ~/Downloads/crouton -t touch,xfce" />
+              <outline text="sudo sh -e ~/Downloads/crouton -t xbmc -r raring" /></outline>
+            <outline text="SD Card" >
+              <outline text="sudo sh -e ~/Downloads/crouton -t touch,xfce -p /media/removable/SD\ Card" /></outline>
+          </outline>
+          <outline text="run" >
+            <outline text="SSD" >
+              <outline text="sudo startxfce4" /></outline>
+            <outline text="SD Card" >
+              <outline text="cd /media/removable/SD\ Card/bin" />
+              <outline text="sudo bash startxfce4 -c /media/removable/SD\ Card/chroots" /></outline>
+          </outline>
+          <outline text="backup" >
+            <outline text="sudo edit-chroot -b precise" /></outline>
+          <outline text="restore" >
+            <outline text="latest: sudo edit-chroot -r precise" />
+            <outline text="install from restore: sudo sh -e ~/Downloads/crouton -f mybackup.tar.gz" /></outline>
+          <outline text="tools" >
+            <outline text="sudo apt-get install gnome-terminal" />
+            <outline text="sudo apt-get install gnome-tweak-tool" /></outline>
+        </outline>
+        <outline text="java - open jdk" >
+          <outline text="aptget" /></outline>
+        <outline text="Eclipse" />
+        <outline text="Google plugin for eclipse (gwt)" />
+        <outline text="Maven" >
+          <outline text="JBoss Tools (Eclipse)" />
+          <outline text="standalone (terminal)" /></outline>
+      </outline>
+      <outline text="Framework" >
+        <outline text="Errai" />
+        <outline text="gwt" >
+          <outline text="communication between menu an content composite widgets" _note="menu class:&#10;private Content content;&#10;public Menu(Content content){&#10;	this.content = content;&#10;}&#10;&#10;content class:&#10;Menu menu = new Menu(this);" /></outline>
+        <outline text="JBoss central" />
+        <outline text="html 5" />
+        <outline text="Cordova" /></outline>
+      <outline text="Coordination" >
+        <outline text="openshift" />
+        <outline text="github" /></outline>
+      <outline text="Progress, Followup &amp;amp; Questions" >
+        <outline text="040514" >
+          <outline text="why do i need to set the PATH every time" _note="export PATH=/opt/maven/apache-maven.../bin:$PATH&#10;move it to usr/local/maven ?" />
+          <outline text="steps overview" >
+            <outline text="errai - gwt" />
+            <outline text="maven gwt" />
+            <outline text="cordova" /></outline>
+          <outline text="simple example project" /></outline>
+        <outline text="110514" >
+          <outline text="created a project with 2 classes," />
+          <outline text="created another project that depended on it" />
+          <outline text="how do i run the files i built?" >
+            <outline text="java -cp" /></outline>
+          <outline text="what kind of tests do i have? how do i know if they succeeded?" >
+            <outline text="test driven development (tests first , than code)" />
+            <outline text="arquillian - jboss project for integration testing" /></outline>
+          <outline text="dependencies" >
+            <outline text="maven moduals sub projects" />
+            <outline text="depend on external classes" /></outline>
+          <outline text="create archetype, try others" />
+          <outline text="war archetype" >
+            <outline text="servlet class" />
+            <outline text="web.xml" /></outline>
+        </outline>
+        <outline text="250514" >
+          <outline text="continue with gwt" >
+            <outline text="self growing..." />
+            <outline text="gwt elemental to manipulate standard html 5" /></outline>
+          <outline text="&quot;database&quot;" >
+            <outline text="xml or json" >
+              <outline text="serialize deserialize" >
+                <outline text="java object to xml and vise versa (parsing)" />
+                <outline text="send an xml file to server as string" /></outline>
+            </outline>
+            <outline text="gwt html5 local storage examples" /></outline>
+          <outline text="html 5" >
+            <outline text="canvas" />
+            <outline text="svg" />
+            <outline text="etc..." /></outline>
+          <outline text="maven archetype that just does a servlet (and web.xml)" >
+            <outline text="get http request" />
+            <outline text="sends response (html, xml, json)" />
+            <outline text="build it and create war file" /></outline>
+          <outline text="errai" /></outline>
+        <outline text="010614" >
+          <outline text="servlet class (google helloworld servlet)" >
+            <outline text="google: maven servlet hello&quot; &quot;world &quot;archetype&quot; , simple, minimal, doget, dopost" />
+            <outline text="extends httpservlet" />
+            <outline text="doGet(request(.getheader, .getparameter etc...), response(.setcontenttype...))" >
+              <outline text="sysout(&quot;hello&quot;);" />
+              <outline text="read request and print to console and html page" /></outline>
+            <outline text="doPost()" /></outline>
+          <outline text="jboss 7.1.1" >
+            <outline text="/opt/srv/ copy from sd card" />
+            <outline text="home dir has bin/" />
+            <outline text="deploy/ &amp;lt; put war file" />
+            <outline text="terminal &amp;gt; nav to bin/" >
+              <outline text="./standalone.sh" />
+              <outline text="run jboss in standalone mode" /></outline>
+            <outline text="browser: http://localhost:8080/foo" /></outline>
+        </outline>
+        <outline text="220614" >
+          <outline text="servlets" >
+            <outline text="print out html" />
+            <outline text="send back html that has images (local or not)" />
+            <outline text="html 5? (maybe)" />
+            <outline text="read a file (that contains html) and return the content" />
+            <outline text="welcome page (html, jsp, jsf)" />
+            <outline text="time on server (Date(), timeinmilli)" />
+            <outline text="see time differences, time it took to do something" />
+            <outline text="get access to request obj (url, headers, parameters, language, etc...)" />
+            <outline text="print out the values in a table" />
+            <outline text="try to do the same thing in gwt using the same class" /></outline>
+          <outline text="jsp? historical?" />
+          <outline text="jsf (java server faces)" />
+          <outline text="understand the similarities and differences between gwt and regular servlets" /></outline>
+      </outline>
+    </outline>
+  </body>
+</opml>

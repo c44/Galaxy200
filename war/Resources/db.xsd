@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+	<element name="db">
+		<complexType>
+			<sequence>
+				<element name="users">
+					<complexType>
+						<sequence>
+							<element name="user" minOccurs="0" maxOccurs="unbounded">
+								<complexType>
+									<sequence>
+										<element name="firstName" type="string" />
+										<element name="lastName" type="string" />
+										<element name="id" type="string" />
+										<element name="birthday">
+											<complexType>
+												<sequence>
+													<element name="day" type="int" />
+													<element name="month" type="int" />
+													<element name="year" type="int" />
+												</sequence>
+											</complexType>
+										</element>
+										<element name="birthday1" type="date" minOccurs="0" />
+										<element name="workDays" minOccurs="0" maxOccurs="unbounded">
+											<complexType>
+												<sequence>
+													<element name="workDay" minOccurs="0" maxOccurs="unbounded">
+														<complexType>
+															<sequence>
+																<element name="type">
+																	<simpleType>
+																		<restriction base="string">
+																			<enumeration value="PrivateTraining" />
+																			<enumeration value="Targil" />
+																		</restriction>
+																	</simpleType>
+																</element>
+																<element name="date" type="date" />
+																<element name="approval" type="boolean" />
+															</sequence>
+														</complexType>
+													</element>
+												</sequence>
+											</complexType>
+										</element>
+										<element name="branch">
+											<simpleType>
+												<restriction base="string">
+													<enumeration value="North" />
+													<enumeration value="South" />
+												</restriction>
+											</simpleType>
+										</element>
+										<element name="cell">
+											<simpleType>
+												<restriction base="string">
+													<enumeration value="A" />
+													<enumeration value="C" />
+													<enumeration value="M" />
+												</restriction>
+											</simpleType>
+										</element>
+									</sequence>
+								</complexType>
+							</element>
+						</sequence>
+					</complexType>
+				</element>
+				<element name="cells">
+					<complexType>
+						<sequence>
+							<element name="cell" minOccurs="0" maxOccurs="unbounded">
+								<complexType>
+									<sequence>
+										<element name="name" type="string" />
+									</sequence>
+								</complexType>
+							</element>
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>
